@@ -1,0 +1,58 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "GMDynamicSC",
+  "sourceName": "contracts/common/contracts/GMDynamicSC.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "method",
+          "type": "string"
+        }
+      ],
+      "name": "MethodNotSupported",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ZeroAddressNotSupported",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "getDynamicSCAddresses",
+      "outputs": [
+        {
+          "internalType": "address[2]",
+          "name": "",
+          "type": "address[2]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "transferBlockedToken",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

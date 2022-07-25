@@ -1,0 +1,75 @@
+{
+  "name": "hardhat-boilerplate",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get your application up and running.",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "husky install",
+    "pre-commit": "lint-staged",
+    "local-node": "npx hardhat node",
+    "clean": "npx hardhat clean",
+    "compile": "npx hardhat compile",
+    "test": "NODE_ENV=test npx hardhat test",
+    "test-parallel": "npx hardhat test --parallel",
+    "test:coverage": "npx hardhat coverage",
+    "contract:size": "npx hardhat size-contracts",
+    "script:export-users": "node scripts/moralis/export.js",
+    "script:upload-metadata": "npx hardhat run scripts/moralis/metadataBuilder.js",
+    "restart": "npx hardhat run scripts/0.restart-environment.js",
+    "deploy": "npx hardhat run scripts/1.deploy-all.js",
+    "watch-events": "npx hardhat run scripts/2.watch-events.js",
+    "request-random": "npx hardhat run scripts/3.request-random-number.js",
+    "set-giveaway": "npx hardhat run scripts/6.set-giveaway-stage.js",
+    "set-presale": "npx hardhat run scripts/7.set-presale-stage.js",
+    "set-opensale": "npx hardhat run scripts/8.set-opensale-stage.js",
+    "deploy:moralis": "sh deploy_moralis.sh"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccejas/hardhat-boilerplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ccejas/hardhat-boilerplate/issues"
+  },
+  "homepage": "https://github.com/ccejas/hardhat-boilerplate#readme",
+  "devDependencies": {
+    "@chainlink/contracts": "^0.4.0",
+    "@commitlint/config-conventional": "^16.2.1",
+    "@nomiclabs/hardhat-ethers": "^2.0.4",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@openzeppelin/contracts": "^4.4.1",
+    "@openzeppelin/contracts-upgradeable": "^4.4.2",
+    "@openzeppelin/hardhat-upgrades": "^1.13.0",
+    "chai": "^4.3.4",
+    "commitlint": "^16.0.1",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.5.0",
+    "ethers": "^5.5.3",
+    "hardhat": "^2.8.0",
+    "hardhat-contract-sizer": "^2.4.0",
+    "hardhat-gas-reporter": "^1.0.8",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.4",
+    "moralis-admin-cli": "^2.1.16",
+    "prettier": "^2.5.1",
+    "solidity-coverage": "^0.7.21"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.1",
+    "joi": "^17.6.0",
+    "keccak256": "^1.0.6",
+    "merkletreejs": "^0.2.31",
+    "moralis": "^1.5.5",
+    "objects-to-csv": "^1.3.6",
+    "prompt": "^1.3.0"
+  }
+}

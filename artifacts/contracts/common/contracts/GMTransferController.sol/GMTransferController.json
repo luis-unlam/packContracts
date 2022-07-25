@@ -1,0 +1,95 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "GMTransferController",
+  "sourceName": "contracts/common/contracts/GMTransferController.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "collectionAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "bypassTokenId",
+      "outputs": [],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "collectionAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "canTokenBeTransferred",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "collectionAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "removeBypassTokenId",
+      "outputs": [],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes4",
+          "name": "interfaceId",
+          "type": "bytes4"
+        }
+      ],
+      "name": "supportsInterface",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b506101c3806100206000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c806301ffc9a714610051578063148740bd1461007857806354e4116c1461008f578063cdd84bc21461008f575b600080fd5b61006461005f3660046100da565b6100a3565b604051901515815260200160405180910390f35b610064610086366004610127565b60009392505050565b6100a161009d366004610163565b5050565b005b60006001600160e01b03198216638dbb1a1360e01b14806100d457506301ffc9a760e01b6001600160e01b03198316145b92915050565b6000602082840312156100ec57600080fd5b81356001600160e01b03198116811461010457600080fd5b9392505050565b80356001600160a01b038116811461012257600080fd5b919050565b60008060006060848603121561013c57600080fd5b6101458461010b565b92506101536020850161010b565b9150604084013590509250925092565b6000806040838503121561017657600080fd5b61017f8361010b565b94602093909301359350505056fea2646970667358221220149176d9f253483ccfe9e7477266fc7e5c7be070184af409db62fcc43fe0df9b64736f6c63430008090033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c806301ffc9a714610051578063148740bd1461007857806354e4116c1461008f578063cdd84bc21461008f575b600080fd5b61006461005f3660046100da565b6100a3565b604051901515815260200160405180910390f35b610064610086366004610127565b60009392505050565b6100a161009d366004610163565b5050565b005b60006001600160e01b03198216638dbb1a1360e01b14806100d457506301ffc9a760e01b6001600160e01b03198316145b92915050565b6000602082840312156100ec57600080fd5b81356001600160e01b03198116811461010457600080fd5b9392505050565b80356001600160a01b038116811461012257600080fd5b919050565b60008060006060848603121561013c57600080fd5b6101458461010b565b92506101536020850161010b565b9150604084013590509250925092565b6000806040838503121561017657600080fd5b61017f8361010b565b94602093909301359350505056fea2646970667358221220149176d9f253483ccfe9e7477266fc7e5c7be070184af409db62fcc43fe0df9b64736f6c63430008090033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
